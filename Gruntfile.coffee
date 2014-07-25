@@ -30,7 +30,7 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
         connect:
 
             livereload:
@@ -49,7 +49,7 @@ module.exports = (grunt) ->
                 indentation:
                     value: 4
 
-            all: ['Gruntfile.coffee']
+            # all: ['Gruntfile.coffee']
 
         jshint:
 
@@ -64,9 +64,27 @@ module.exports = (grunt) ->
                 files: [{
                     expand: true
                     src: [
+                        'bower_components/reveal.js/lib/css/zenburn.css',
+                        'bower_components/reveal.js/css/theme/default.css',
+                        'bower_components/reveal.js/css/reveal.min.css',
+
+                        'bower_components/jquery/jquery.js',
+                        'bower_components/handlebars/handlebars.js',
+                        'bower_components/reveal.js/lib/js/head.min.js',
+                        'bower_components/reveal.js/js/reveal.min.js',
+
+                        'bower_components/reveal.js/lib/js/classList.js',
+                        'bower_components/reveal.js/plugin/markdown/marked.js',
+                        'bower_components/reveal.js/plugin/markdown/markdown.js',
+                        'bower_components/reveal.js/plugin/highlight/highlight.js',
+                        'bower_components/reveal.js/plugin/zoom-js/zoom.js',
+                        'bower_components/reveal.js/plugin/notes/notes.js',
+
+                        'bower_components/reveal.js/lib/font/*',
                         'slides/**'
-                        'bower_components/**'
                         'js/**'
+                        'css/**'
+                        'images/**'
                     ]
                     dest: 'dist/'
                 },{
