@@ -1,4 +1,37 @@
 [
     "index.md",
-    "media-queries.md"
+    "about.md",
+    "desktop.md",
+    "mobile.md",
+    [
+        "media-queries.md",
+        "media-query-phone.md",
+        "media-query-tablet.md",
+        "media-query-large-desktop.md"
+    ],
+    [
+        "avoid-tables.md",
+        "table-hack-desktop-screen.md",
+        "table-hack.md",
+        "table-hack-css.md",
+        "table-hack-mobile-screen.md"
+    ],
+    [
+        "input-types.md",
+        "input-type-text.md",
+        "input-types-number.md",
+        "input-type-tel.md",
+        "input-type-email.md"
+    ],
+    "display-block.md",
+    [
+        "tools.md",
+        "chrome-devtools.md",
+        "mih-tools.md"
+    ],
+    "min-inputs.md",
+    "prefill-possible.md",
+    "icon-size.md",
+    "mail-phone.md",
+    "thank-you.md"
 ]

@@ -1,0 +1,7 @@
+## Large desktops
+
+```css
+@media only screen and (min-width: 1200px) {
+
+}
+```
