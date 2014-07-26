@@ -67,6 +67,7 @@ module.exports = (grunt) ->
                         'bower_components/reveal.js/lib/css/zenburn.css',
                         'bower_components/reveal.js/css/theme/default.css',
                         'bower_components/reveal.js/css/reveal.min.css',
+                        'bower_components/reveal.js/css/print/pdf.css',
 
                         'bower_components/jquery/jquery.js',
                         'bower_components/handlebars/handlebars.js',
