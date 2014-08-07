@@ -12,16 +12,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    
+
         <link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
-    
+
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
 
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
-          document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+            if( window.location.search.match( /print-pdf/gi ) ) {
+               var link = document.createElement( 'link' );
+               link.rel = 'stylesheet';
+               link.type = 'text/css';
+               link.href = 'bower_components/reveal.js/css/print/pdf.css';
+               document.getElementsByTagName( 'head' )[0].appendChild( link );
+           }
         </script>
 
         <!--[if lt IE 9]>
@@ -35,200 +41,200 @@
 
             <div class="slides">
 
-                
-                    
-                        
+
+
+
     <section data-markdown="slides/index.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/about.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/desktop.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/mobile.md"></section>
 
 
-                    
-                    
-                
-                    
-                    
+
+
+
+
+
                         <section>
-                            
-                                
+
+
     <section data-markdown="slides/media-queries.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/media-query-phone.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/media-query-tablet.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/media-query-large-desktop.md"></section>
 
 
-                            
+
                         </section>
-                    
-                
-                    
-                    
+
+
+
+
                         <section>
-                            
-                                
+
+
     <section data-markdown="slides/avoid-tables.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/table-hack-desktop-screen.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/table-hack.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/table-hack-css.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/table-hack-mobile-screen.md"></section>
 
 
-                            
+
                         </section>
-                    
-                
-                    
-                    
+
+
+
+
                         <section>
-                            
-                                
+
+
     <section data-markdown="slides/input-types.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/input-type-text.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/input-types-number.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/input-type-tel.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/input-type-email.md"></section>
 
 
-                            
+
                         </section>
-                    
-                
-                    
-                        
+
+
+
+
     <section data-markdown="slides/display-block.md"></section>
 
 
-                    
-                    
-                
-                    
-                    
+
+
+
+
+
                         <section>
-                            
-                                
+
+
     <section data-markdown="slides/tools.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/chrome-devtools.md"></section>
 
 
-                            
-                                
+
+
     <section data-markdown="slides/mih-tools.md"></section>
 
 
-                            
+
                         </section>
-                    
-                
-                    
-                        
+
+
+
+
     <section data-markdown="slides/min-inputs.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/prefill-possible.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/icon-size.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/mail-phone.md"></section>
 
 
-                    
-                    
-                
-                    
-                        
+
+
+
+
+
     <section data-markdown="slides/thank-you.md"></section>
 
 
-                    
-                    
-                
+
+
+
             </div>
 
         </div>
